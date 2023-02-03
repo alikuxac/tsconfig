@@ -1,0 +1,30 @@
+{
+  "name": "@alikuxac/tsconfig",
+  "version": "0.0.1",
+  "description": "Alikuxac tsconfig file",
+  "main": "./src/tsconfig.json",
+  "tsconfig": "./src/tsconfig.json",
+  "scripts": {
+    "lint": "prettier --check .",
+    "lint:fix": "prettier --write .",
+    "publish": "changeset publish",
+    "version": "changeset version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alikuxac/tsconfig.git"
+  },
+  "keywords": [
+    "tsconfig",
+    "alikuxac"
+  ],
+  "author": "Alikuxac <admin@alikuxac.xyz>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.5"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
