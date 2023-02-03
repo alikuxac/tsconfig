@@ -1,6 +1,6 @@
 {
   "name": "@alikuxac/tsconfig",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Alikuxac tsconfig file",
   "main": "./src/tsconfig.json",
   "tsconfig": "./src/tsconfig.json",
