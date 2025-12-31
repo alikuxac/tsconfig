@@ -1,5 +1,11 @@
 # @alikuxac/tsconfig
 
+## 1.1.6
+
+### Patch Changes
+
+- fix: final adjustment to oidc workflow to ensure a green status on github actions
+
 ## 1.1.5
 
 ### Patch Changes
