@@ -1,5 +1,11 @@
 # @alikuxac/tsconfig
 
+## 1.1.5
+
+### Patch Changes
+
+- fix: switch to npm run release in workflow to avoid yarn berry interference
+
 ## 1.1.4
 
 ### Patch Changes
