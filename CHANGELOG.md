@@ -1,5 +1,11 @@
 # @alikuxac/tsconfig
 
+## 1.1.4
+
+### Patch Changes
+
+- fix: meticulously align workflow with proven patterns for oidc publish and tagging
+
 ## 1.1.3
 
 ### Patch Changes

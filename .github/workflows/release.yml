@@ -16,17 +16,19 @@ jobs:
       id-token: write
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Node.js 22.x
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903
         with:
-          node-version: "24"
+          node-version: "22.x"
           registry-url: "https://registry.npmjs.org/"
 
       - name: Update npm for OIDC trusted publishing
         run: |
           # npm trusted publishing requires npm >= 11.5.1
+          # Node.js 22.x ships with npm 10.x, so we need to update
+          echo "Current npm version: $(npm --version)"
           npm install -g npm@latest
           echo "Updated npm version: $(npm --version)"
 
@@ -35,9 +37,9 @@ jobs:
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
-        uses: changesets/action@v1
+        uses: changesets/action@e0145edc7d9d8679003495b11f87bd8ef63c0cba
         with:
-          publish: npx changeset publish
+          publish: yarn release
           commit: "ci: release"
           title: "ci: release"
         env:
