@@ -22,6 +22,7 @@ jobs:
         uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903
         with:
           node-version: "22.x"
+          registry-url: "https://registry.npmjs.org/"
 
       - name: Enable Corepack
         run: corepack enable
@@ -45,5 +46,5 @@ jobs:
           commit: "ci: release"
           title: "ci: release"
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: "" # https://github.com/changesets/changesets/issues/1152#issuecomment-3190884868

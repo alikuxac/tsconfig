@@ -1,5 +1,11 @@
 # @alikuxac/tsconfig
 
+## 1.1.7
+
+### Patch Changes
+
+- fix: final attempt to stabilize the release pipeline with refreshed registry configuration
+
 ## 1.1.6
 
 ### Patch Changes
