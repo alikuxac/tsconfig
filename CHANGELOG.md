@@ -1,5 +1,11 @@
 # @alikuxac/tsconfig
 
+## 1.1.2
+
+### Patch Changes
+
+- fix: refine github actions workflow for stable oidc publish
+
 ## 1.1.1
 
 ### Patch Changes

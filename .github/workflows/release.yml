@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: "24"
 
+      - name: Upgrade npm for OIDC support
+        run: npm install -g npm@latest
+
       - name: Install dependencies
         run: yarn install --immutable
 
@@ -28,5 +31,8 @@ jobs:
         uses: changesets/action@v1
         with:
           publish: npx changeset publish
+          commit: "ci: release"
+          title: "ci: release"
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          NPM_TOKEN: ''
