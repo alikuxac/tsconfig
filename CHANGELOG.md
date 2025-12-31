@@ -1,5 +1,11 @@
 # @alikuxac/tsconfig
 
+## 1.1.3
+
+### Patch Changes
+
+- fix: final refinement of oidc publish workflow based on proven patterns
+
 ## 1.1.2
 
 ### Patch Changes
