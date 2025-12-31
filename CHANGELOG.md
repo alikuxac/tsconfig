@@ -1,5 +1,11 @@
 # @alikuxac/tsconfig
 
+## 1.1.0
+
+### Minor Changes
+
+- feat: add specialized tsconfig files for base, nextjs, and nestjs
+
 ## 1.0.3
 
 ### Patch Changes

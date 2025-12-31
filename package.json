@@ -1,9 +1,22 @@
 {
   "name": "@alikuxac/tsconfig",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Alikuxac tsconfig file",
-  "main": "./src/tsconfig.json",
-  "tsconfig": "./src/tsconfig.json",
+  "main": "./src/base.json",
+  "tsconfig": "./src/base.json",
+  "files": [
+    "src/*.json"
+  ],
+  "exports": {
+    ".": "./src/base.json",
+    "./base": "./src/base.json",
+    "./nextjs": "./src/nextjs.json",
+    "./nestjs": "./src/nestjs.json"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "scripts": {
     "lint": "prettier --check .",
     "lint:fix": "prettier --write .",
@@ -21,11 +34,11 @@
   "author": "Alikuxac <admin@alikuxac.xyz>",
   "license": "MIT",
   "devDependencies": {
-    "@changesets/cli": "^2.27.1",
-    "prettier": "^3.2.4",
-    "typescript": "^5.3.3"
+    "@changesets/cli": "^2.29.8",
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=20.0.0"
   }
 }
