@@ -1,5 +1,11 @@
 # @alikuxac/tsconfig
 
+## 1.1.1
+
+### Patch Changes
+
+- fix: retry publish with correct environment and provenance
+
 ## 1.1.0
 
 ### Minor Changes
