@@ -1,10 +1,17 @@
 # @alikuxac/tsconfig
 
+## 1.1.9
+
+### Patch Changes
+
+- fix: final attempt to achieve green build status after fixing github action permissions
+- chore: remove redundant `publish` script from `package.json`
+
 ## 1.1.8
 
 ### Patch Changes
 
-- fix: addressing potential github token conflicts to ensure successful tagging after publish
+- fix: fix workflow permissions to enable successful git tagging after publish
 
 ## 1.1.7
 

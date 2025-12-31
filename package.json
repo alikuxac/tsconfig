@@ -1,6 +1,6 @@
 {
   "name": "@alikuxac/tsconfig",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "Alikuxac tsconfig file",
   "main": "./src/base.json",
   "tsconfig": "./src/base.json",
@@ -20,7 +20,6 @@
   "scripts": {
     "lint": "prettier --check .",
     "lint:fix": "prettier --write .",
-    "publish": "changeset publish",
     "version": "changeset version",
     "release": "changeset publish"
   },
