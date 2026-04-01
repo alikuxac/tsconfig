@@ -1,6 +1,6 @@
 {
   "name": "@alikuxac/tsconfig",
-  "version": "1.1.9",
+  "version": "1.2.0",
   "description": "Alikuxac tsconfig file",
   "main": "./src/base.json",
   "tsconfig": "./src/base.json",
@@ -8,10 +8,16 @@
     "src/*.json"
   ],
   "exports": {
-    ".": "./src/base.json",
-    "./base": "./src/base.json",
-    "./nextjs": "./src/nextjs.json",
-    "./nestjs": "./src/nestjs.json"
+    ".": "./src/v5/base.json",
+    "./base": "./src/v5/base.json",
+    "./nextjs": "./src/v5/nextjs.json",
+    "./nestjs": "./src/v5/nestjs.json",
+    "./v5/base": "./src/v5/base.json",
+    "./v5/nextjs": "./src/v5/nextjs.json",
+    "./v5/nestjs": "./src/v5/nestjs.json",
+    "./v6/base": "./src/v6/base.json",
+    "./v6/nextjs": "./src/v6/nextjs.json",
+    "./v6/nestjs": "./src/v6/nestjs.json"
   },
   "publishConfig": {
     "access": "public",
@@ -34,12 +40,12 @@
   "author": "Alikuxac <admin@alikuxac.xyz>",
   "license": "MIT",
   "devDependencies": {
-    "@changesets/cli": "^2.29.8",
-    "prettier": "^3.7.4",
-    "typescript": "^5.9.3"
+    "@changesets/cli": "^2.30.0",
+    "prettier": "^3.8.1",
+    "typescript": "^6.0.2"
   },
   "engines": {
     "node": ">=20.0.0"
   },
-  "packageManager": "yarn@4.12.0"
+  "packageManager": "yarn@4.13.0"
 }

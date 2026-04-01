@@ -1,10 +1,23 @@
 # @alikuxac/tsconfig
 
+## 1.2.0
+
+### Minor Changes
+
+- - Support both TypeScript v5 and v6.
+  - Add optimized configuration for TypeScript 6.0 with `target: es2024`.
+  - Restructure `src/v5/` and `src/v6/` directories for better version
+    management.
+  - Update `package.json` exports to support versioned mappings (e.g.,
+    `@alikuxac/tsconfig/v6/base`).
+  - Update devDependencies (TypeScript 6.0.2, Prettier 3.8.1) and Yarn 4.13.0.
+
 ## 1.1.9
 
 ### Patch Changes
 
-- fix: final attempt to achieve green build status after fixing github action permissions
+- fix: final attempt to achieve green build status after fixing github action
+  permissions
 - chore: remove redundant `publish` script from `package.json`
 
 ## 1.1.8
@@ -17,13 +30,15 @@
 
 ### Patch Changes
 
-- fix: final attempt to stabilize the release pipeline with refreshed registry configuration
+- fix: final attempt to stabilize the release pipeline with refreshed registry
+  configuration
 
 ## 1.1.6
 
 ### Patch Changes
 
-- fix: final adjustment to oidc workflow to ensure a green status on github actions
+- fix: final adjustment to oidc workflow to ensure a green status on github
+  actions
 
 ## 1.1.5
 
@@ -35,7 +50,8 @@
 
 ### Patch Changes
 
-- fix: meticulously align workflow with proven patterns for oidc publish and tagging
+- fix: meticulously align workflow with proven patterns for oidc publish and
+  tagging
 
 ## 1.1.3
 

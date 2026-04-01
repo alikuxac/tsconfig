@@ -41,7 +41,9 @@ pnpm add -D @alikuxac/tsconfig
 Extend the configuration in your `tsconfig.json` file.
 
 ### 🌟 Base (General Purpose)
+
 Perfect for standard library or Node.js projects.
+
 ```json
 {
   "extends": "@alikuxac/tsconfig/base"
@@ -49,7 +51,9 @@ Perfect for standard library or Node.js projects.
 ```
 
 ### ⚛️ Next.js
+
 Optimized for Next.js applications with proper plugin support.
+
 ```json
 {
   "extends": "@alikuxac/tsconfig/nextjs"
@@ -57,7 +61,9 @@ Optimized for Next.js applications with proper plugin support.
 ```
 
 ### 🦁 NestJS
+
 Tailored for NestJS/Backend projects with decorator support.
+
 ```json
 {
   "extends": "@alikuxac/tsconfig/nestjs"
@@ -66,10 +72,10 @@ Tailored for NestJS/Backend projects with decorator support.
 
 ## ⚙️ Configuration Matrix
 
-| Config | Target | Module | Features |
-| :--- | :--- | :--- | :--- |
-| `base` | ES2022 | ESNext | Bundler-ready, Strict |
-| `nextjs` | ES2022 | ESNext | + Next.js Plugin, JSX |
+| Config   | Target | Module   | Features                 |
+| :------- | :----- | :------- | :----------------------- |
+| `base`   | ES2022 | ESNext   | Bundler-ready, Strict    |
+| `nextjs` | ES2022 | ESNext   | + Next.js Plugin, JSX    |
 | `nestjs` | ES2021 | CommonJS | + Decorators, SourceMaps |
 
 ## 📜 License
