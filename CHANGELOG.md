@@ -1,16 +1,23 @@
 # @alikuxac/tsconfig
 
+## 1.2.1
+
+### Patch Changes
+
+- Update package configurations and dependencies.
+- Optimize GitHub Action: Trigger release only on tag push.
+
 ## 1.2.0
 
 ### Minor Changes
 
-- - Support both TypeScript v5 and v6.
-  - Add optimized configuration for TypeScript 6.0 with `target: es2024`.
-  - Restructure `src/v5/` and `src/v6/` directories for better version
-    management.
-  - Update `package.json` exports to support versioned mappings (e.g.,
-    `@alikuxac/tsconfig/v6/base`).
-  - Update devDependencies (TypeScript 6.0.2, Prettier 3.8.1) and Yarn 4.13.0.
+- Support both TypeScript v5 and v6.
+- Add optimized configuration for TypeScript 6.0 with `target: es2024`.
+- Restructure `src/v5/` and `src/v6/` directories for better version
+  management.
+- Update `package.json` exports to support versioned mappings (e.g.,
+  `@alikuxac/tsconfig/v6/base`).
+- Update devDependencies (TypeScript 6.0.2, Prettier 3.8.1) and Yarn 4.13.0.
 
 ## 1.1.9
 
