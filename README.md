@@ -1,11 +1,11 @@
 # @alikuxac/tsconfig
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Gear/Flat/Gear_flat.png" width="100" height="100" />
+  <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Gear/3D/gear_3d.png" width="100" height="100" alt="@alikuxac/tsconfig logo" />
 </p>
 
 <p align="center">
-  <b>A collection of opinionated, premium TypeScript configurations for modern web development.</b>
+  <b>Opinionated TypeScript configurations for Node.js, Next.js, and NestJS.</b>
 </p>
 
 <p align="center">
@@ -16,33 +16,35 @@
 
 ---
 
-## 🚀 Features
+## Features
 
-- **Strict by default**: Encourages best practices and type safety.
-- **Specialized**: Configurations for Base, Next.js, and NestJS.
-- **Modern**: Targeted for Node.js 20+ and modern ESM/CJS environments.
-- **Lightweight**: Zero dependencies, just pure JSON.
+- **Strict type checking**: Catches type errors early across all presets.
+- **TypeScript 5, 6, and 7 support**: Version-pinned configurations in `src/v5`,
+  `src/v6`, and `src/v7`.
+- **Project presets**: Presets for base Node/ESM libraries, Next.js with
+  compiler plugins, and NestJS with decorators.
+- **Zero dependencies**: Pure JSON configuration files.
 
-## 📦 Installation
+## Installation
 
 ```bash
-# Using npm
+# npm
 npm install --save-dev @alikuxac/tsconfig
 
-# Using yarn
+# yarn
 yarn add -D @alikuxac/tsconfig
 
-# Using pnpm
+# pnpm
 pnpm add -D @alikuxac/tsconfig
 ```
 
-## 🛠 Usage
+## Usage
 
-Extend the configuration in your `tsconfig.json` file.
+Extend a configuration in your `tsconfig.json`.
 
-### 🌟 Base (General Purpose)
+### Base (Libraries and Node.js)
 
-Perfect for standard library or Node.js projects.
+Default:
 
 ```json
 {
@@ -50,9 +52,17 @@ Perfect for standard library or Node.js projects.
 }
 ```
 
-### ⚛️ Next.js
+TypeScript 7 target:
 
-Optimized for Next.js applications with proper plugin support.
+```json
+{
+  "extends": "@alikuxac/tsconfig/v7/base"
+}
+```
+
+### Next.js
+
+Default:
 
 ```json
 {
@@ -60,9 +70,17 @@ Optimized for Next.js applications with proper plugin support.
 }
 ```
 
-### 🦁 NestJS
+TypeScript 7 target:
 
-Tailored for NestJS/Backend projects with decorator support.
+```json
+{
+  "extends": "@alikuxac/tsconfig/v7/nextjs"
+}
+```
+
+### NestJS
+
+Default:
 
 ```json
 {
@@ -70,14 +88,28 @@ Tailored for NestJS/Backend projects with decorator support.
 }
 ```
 
-## ⚙️ Configuration Matrix
+TypeScript 7 target:
 
-| Config   | Target | Module   | Features                 |
-| :------- | :----- | :------- | :----------------------- |
-| `base`   | ES2022 | ESNext   | Bundler-ready, Strict    |
-| `nextjs` | ES2022 | ESNext   | + Next.js Plugin, JSX    |
-| `nestjs` | ES2021 | CommonJS | + Decorators, SourceMaps |
+```json
+{
+  "extends": "@alikuxac/tsconfig/v7/nestjs"
+}
+```
 
-## 📜 License
+## Configuration Matrix
+
+| Config      | Target | Module   | Features                |
+| :---------- | :----- | :------- | :---------------------- |
+| `base` (v5) | ES2022 | ESNext   | Bundler-ready, strict   |
+| `nextjs`    | ES2022 | ESNext   | Next.js plugin, JSX     |
+| `nestjs`    | ES2021 | CommonJS | Decorators, source maps |
+| `v6/base`   | ES2024 | ESNext   | Bundler-ready, strict   |
+| `v6/nextjs` | ES2024 | ESNext   | Next.js plugin, JSX     |
+| `v6/nestjs` | ES2021 | CommonJS | Decorators, source maps |
+| `v7/base`   | ES2025 | ESNext   | Bundler-ready, strict   |
+| `v7/nextjs` | ES2025 | ESNext   | Next.js plugin, JSX     |
+| `v7/nestjs` | ES2024 | CommonJS | Decorators, source maps |
+
+## License
 
 MIT © [Alikuxac](https://github.com/alikuxac)

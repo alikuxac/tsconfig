@@ -1,5 +1,25 @@
 # @alikuxac/tsconfig
 
+## 1.3.0
+
+### Minor Changes
+
+- Add TypeScript 7 presets in `src/v7/`:
+  - `v7/base`: Target `es2025`, `lib: ["es2025", "dom", "dom.iterable"]`, and
+    `moduleResolution: "bundler"`.
+  - `v7/nextjs`: Extends `v7/base` with Next.js plugin and preserved JSX.
+  - `v7/nestjs`: Target `es2024`, CommonJS modules, and decorator metadata.
+- Export `./v7/base`, `./v7/nextjs`, and `./v7/nestjs` in `package.json`.
+- Include `src/**/*.json` in `package.json` `files` to bundle version
+  directories.
+- Bump `typescript` devDependency to `^7.0.2`.
+- Fix broken logo link in `README.md` and document TypeScript 7 in configuration
+  matrix.
+- Remove Changesets in favor of direct tag-triggered `npm publish` in release
+  workflow.
+- Update release workflow to `actions/checkout@v7` and `actions/setup-node@v7`,
+  and remove `registry-url` to fix npm OIDC publishing.
+
 ## 1.2.1
 
 ### Patch Changes
@@ -13,8 +33,7 @@
 
 - Support both TypeScript v5 and v6.
 - Add optimized configuration for TypeScript 6.0 with `target: es2024`.
-- Restructure `src/v5/` and `src/v6/` directories for better version
-  management.
+- Restructure `src/v5/` and `src/v6/` directories for better version management.
 - Update `package.json` exports to support versioned mappings (e.g.,
   `@alikuxac/tsconfig/v6/base`).
 - Update devDependencies (TypeScript 6.0.2, Prettier 3.8.1) and Yarn 4.13.0.
